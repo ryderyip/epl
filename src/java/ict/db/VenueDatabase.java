@@ -39,4 +39,8 @@ public class VenueDatabase {
         }
         return new HashSet<>(list);
     }
+
+    public Venue queryById(int id) {
+        return db.queryById(id, "venue");
+    }
 }

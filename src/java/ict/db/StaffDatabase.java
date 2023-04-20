@@ -13,7 +13,7 @@ public class StaffDatabase {
     public StaffDatabase() {
         this.db = new Database<>(resultSet -> new Staff(
                 resultSet.getInt("id"),
-                new UserCommonInfoDb().queryById(resultSet.getInt("info_id")),
+                new UserCommonInfoDatabase().queryById(resultSet.getInt("info_id")),
                 new VenueDatabase().queryByInChargeStaffId(resultSet.getInt("venue_in_charge_id")),
                 StaffRole.valueOf(resultSet.getString("role"))
         ));

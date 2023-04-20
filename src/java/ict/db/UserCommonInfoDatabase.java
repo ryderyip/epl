@@ -5,10 +5,10 @@ import ict.data_objects.entities.UserCommonInfo;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class UserCommonInfoDb implements DbInsert<UserCommonInfo> {
+public class UserCommonInfoDatabase implements DbInsert<UserCommonInfo> {
     private final Database<UserCommonInfo> db;
 
-    public UserCommonInfoDb() {
+    public UserCommonInfoDatabase() {
         this.db = new Database<>(UserCommonInfo::fromResultSet);
     }
     

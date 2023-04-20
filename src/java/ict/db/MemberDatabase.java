@@ -12,7 +12,7 @@ public class MemberDatabase {
     public MemberDatabase() {
         memberDb = new Database<>(resultSet -> new Member(
                 resultSet.getInt("id"),
-                new UserCommonInfoDb().queryById(resultSet.getInt("info_id"))
+                new UserCommonInfoDatabase().queryById(resultSet.getInt("info_id"))
         ));
     }
 
@@ -27,7 +27,7 @@ public class MemberDatabase {
     }
 
     public int add(Member member) {
-        UserCommonInfoDb infoDb = new UserCommonInfoDb();
+        UserCommonInfoDatabase infoDb = new UserCommonInfoDatabase();
         int infoId = infoDb.add(member.getInfo());
         int id;
         try {
@@ -39,6 +39,10 @@ public class MemberDatabase {
             throw new RuntimeException(e);
         }
         return id;
+    }
+
+    public Member queryById(int id) {
+        return memberDb.queryById(id, "member");
     }
 }
 
