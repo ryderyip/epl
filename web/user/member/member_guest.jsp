@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-      <title>Home Page</title>
+      <title>Guest Management</title>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
@@ -32,13 +32,13 @@
                     
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="member_frontpage.jsp">Home</a>
+                            <a class="nav-link" href="member_frontpage.jsp">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="member_booking.jsp">Venue Booking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="member_guest.jsp">Guest Management</a>
+                            <a class="nav-link active" href="member_guest.jsp">Guest Management</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="member_record.jsp">Record</a>
@@ -50,50 +50,9 @@
     </nav><br><br><br>
     <!----End Navbar---->
     
-    <center><h3 class="offcanvas-title">Welcome to EPL Booking</h3></center>
+    <center><h3 class="offcanvas-title">Guest Management</h3></center>
     <hr>
-    <table border="0" width="100%">
-        <tr>
-            <td width="20%">
-                        
-            </td>
-            <td width="20%">
-                <table border="1" width="90%">
-                    <tr>
-                        <td align="center"><a href="booking.jsp"><img src="../../img/booking.png" width="250px" height=250px"/></a></td>
-                    </tr>
-                    <tr>
-                        <td align="center"><a class="btn btn-primary" href="booking.jsp">Venue Booking</a></td>
-                    </tr>
-                </table>
-            </td>
-            
-            <td width="20%">
-                <table border="1" width="90%">
-                    <tr>
-                        <td align="center"><a href="Manage.jsp"><img src="../../img/manage.png" width="250px" height=250px"/></a></td>
-                    </tr>
-                    <tr>
-                        <td align="center"><a class="btn btn-primary" href="Manage.jsp">Guest Management</a></td>
-                    </tr>
-                </table>
-            </td>
-            
-            <td width="20%">
-                <table border="1" width="90%">
-                    <tr>
-                        <td align="center"><a href="Record.jsp"><img src="../../img/record.png" width="250px" height=250px"/></a></td>
-                    </tr>
-                    <tr>
-                        <td align="center"><a class="btn btn-primary" href="Record.jsp">Record</a></td>
-                    </tr>
-                </table>
-            </td>
-            <td width="20%">
-                        
-            </td>
-        </tr>
-    </table>
+    
     <!---footer--->
     <hr>
     <center>

@@ -11,67 +11,90 @@
         <title>Register Page</title>
     </head>
     <body>
-        <main>
-            <div class="container">
-                <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                <div class="pt-4 pb-2">
-                                    <h1 class="card-title text-center pb-0 fs-4">IVE Booking</h1>
-                                    <p class="text-center small">Fill in the information to register</p>
-                                </div>
-                                
-                                <form class="row g-3 needs-validation" method="POST" action="#">
-                
-                                    <div class="col-12">
-                                    <label for="username" class="form-label">Username</label>
-                                    <div class="input-group has-validation">
-                                        <input type="text" name="username" class="form-control" id="username" required>
-                                        <div class="invalid-feedback">Please enter your username.</div>
-                                    </div>
-                                    </div>
-                
-                                    <div class="col-12">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" name="password" class="form-control" id="password" required>
-                                    <div class="invalid-feedback">Please enter your password!</div>
-                                    </div>
-                                    
-                                    <div class="col-12">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" name="name" class="form-control" id="name" required>
-                                    <div class="invalid-feedback">Please enter your name!</div>
-                                    </div>
-                                    
-                                    <div class="col-12">
-                                    <label for="phone" class="form-label">Phone</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" required>
-                                    <div class="invalid-feedback">Please enter your name!</div>
-                                    </div>
-                                    
-                                    <div class="col-12">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" required>
-                                    <div class="invalid-feedback">Please enter your name!</div>
-                                    </div>
-        
-                                    <div class="col-12">
-                                    <button class="btn btn-primary w-100" type="submit">Register</button>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="small mb-0">Already have account? <a href="login.jsp">Click me Login</a></p>
-                                    </div>
-                                </form>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
+        <section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+            
+            <form>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label class="form-label" for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-control form-control-lg" required/>
+                    
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="text" id="password" name="password" class="form-control form-control-lg" required/>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                  <div class="form-outline datepicker w-100">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control form-control-lg" id="name" name="name" required/>    
+                  </div>
+
+                </div>
+                  
+                <div class="col-md-6 mb-4">
+                  <h6 class="mb-2 pb-1">Gender: </h6>
+                  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="mgender"
+                      value="male" checked />
+                    <label class="form-check-label" for="mgender">Male</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="fgender"
+                      value="female" />
+                    <label class="form-check-label" for="fgender">Female</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+                  <div class="form-outline">
+                      <label class="form-label" for="emailAddress">Email</label>
+                      <input type="email" id="emailAddress" name="email" class="form-control form-control-lg" required/>
+                  </div>
+                </div>
+                  
+                <div class="col-md-6 mb-4 pb-2">
+                  <div class="form-outline">
+                    <label class="form-label" for="phoneNumber">Phone Number (8 digit)</label>
+                    <input type="text" pattern="[0-9]{8}" id="phoneNumber" name="phone" class="form-control form-control-lg" required/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+              </div>
+            </form>
+            <br>
+            Already have account? <a href="login.jsp">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </body>
 </html>
