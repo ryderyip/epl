@@ -50,7 +50,37 @@
     </nav><br><br><br>
     <!----End Navbar---->
     
+    
     <center><h3 class="offcanvas-title">Venue Booking</h3></center>
+    <hr>
+    <div class="container">
+        <div class="col-md-6 mb-4">
+            
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <label for="locations">Choose a location:</label>
+
+            <select name="location" id="locations" class="form-select">
+              <option value="tm">Tuen Mun</option>
+              <option value="st">Sha Tin</option>
+              <option value="ty">Tsing Yi</option>
+              <option value="lwl">Lee Wai Lee</option>
+              <option value="cw">Chai Wan</option>
+            </select>
+                  </div>
+                  <div class="col-sm">
+                    One of three columns
+                  </div>
+                  <div class="col-sm">
+                    One of three columns
+                  </div>
+                </div>
+              </div>
+            
+        
+        </div>
+    </div>
     <hr>
     <table class="table table-striped" width="90%">
         <thead>
